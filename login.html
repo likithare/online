@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fashion World</title>
+    <link rel="shortcut icon" href="img/fa.ico" />
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:300,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <!-- Include CSS File Here -->
+<link rel="stylesheet" href="css/login.css"/>
+<!-- Include JS File Here -->
+<script src="js/login.js"></script>
+  </head>
+  <body>
+   <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
+    <div class="container" style="padding-top: 8px;padding-bottom: 8px; align:center;">
+     <div class="grid grid-two">
+       <a href="index.html"><img src="img/fa.jpg" alt="logo" style="height: 64px ;" />
+
+     </div>
+     <div class="grid grid-two" style="padding-top: 24px;text-align: right;">
+  <span><a href="mycart.html"></a></span>
+     </div>
+    </div>
+   </header>
+   <main class="container" style="align:center;">
+
+    <div class="container" style="align:center;">
+    <div class="main" style="align:center;">
+    <h2> Login</h2>
+    <form id="form_id" method="post" name="myform">
+    <label>User Name :</label>
+    <input type="text" name="username" id="username"/>
+    <label>Password :</label>
+    <input type="password" name="password" id="password"/>
+    <input type="button" value="Login" id="submit" onclick="validate()"/>
+    </form>
+    </div>
+    </div>
+  </main>
+  <footer>
+   <div class="container">
+   <div class="full">
+    <div class="grid grid-three">
+    <h4 class="text-blue">PRODUCTS</h4>
+     <ul>
+      <li>T-shirts</li>
+      <li>Jeans</li>
+      <li>Shoes</li>
+     </ul>
+    </div>
+    <div class="grid grid-three">
+    <h4 class="text-blue">LINKS</h4>
+     <ul>
+      <li>fashionworld.com</li>
+      </ul>
+     </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">CONTACT</h4>
+      <ul>
+       <li>lmmm.@gamil.com</li>
+       <li>9771456783</li>
+       <li>9846467474</li>
+      </ul>
+     </ul>
+    </div>
+   </div>
+   </div>
+    <div style="text-align: center; padding: 16px;">
+@fashion world
+    </div>
+  </footer>
+  <script type="text/javascript">
+   (function(d) {
+    var products = document.getElementsByClassName('product');
+    for(var i = products.length - 1;i >= 0 ; --i) {
+     products[i].onclick = function() {
+      var src = this.getElementsByTagName('img')[0].src;
+      document.location.href = 'demo.html#' +  src;
+     }
+    }
+   })(document);
+
+  </script>
+ </body>
+</html>
+
+    </body>
+    </html>
